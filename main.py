@@ -8,7 +8,7 @@ def calculate_square(a: int) -> int:
   return a * a
 
 # A task that runs two parallel subtasks
-# (Must be async to run subtasks)
+# (Must be async to await subtask results)
 @task
 async def sum_squares(a: int, b: int) -> int:
   result1, result2 = await asyncio.gather(
@@ -18,7 +18,7 @@ async def sum_squares(a: int, b: int) -> int:
   return result1 + result2
 
 # A task that flips a coin and retries on "tails"
-# (Illustrates retry logic on failure)
+# (Illustrates specifying retry logic on failure)
 @task(
   options=Options(
     retry=Retry(
