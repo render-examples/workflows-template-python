@@ -1,7 +1,7 @@
 # Render Workflows Template - Python
 
 > [!IMPORTANT]
-> **[Render Workflows](https://render.com/docs/workflows) are in limited early access.**
+> **[Render Workflows](https://render.com/docs/workflows) is in public beta.**
 
 Copy this template to your GitHub account by clicking **Use this template > Create a new repository**.
 
